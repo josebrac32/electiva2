@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git</title>
+
+</head>
+<body>
+     
+    <h1><center>¿Que es Git?</center></h1>
+    <p>•	Git es una herramienta que realizar el sistema de control de versiones de 
+        código de forma distribuida. Es de código abierto, con mantenimiento activo y
+         la herramienta de este tipo más empleada en el mundo.</p>
+         <p>Muchos proyectos de software dependen de Git para el control 
+            de versiones, incluidos proyectos comerciales y de código abierto. 
+             Esta herramienta fue creada por Linus Torvalds, el famoso creador del kernel 
+             del sistema operativo Linux, en 2005</p>
+             <p>Este sistema funciona muy bien en una amplia variedad de
+                 sistemas operativos e IDE (entornos de desarrollo integrados). 
+                 Git cuenta con una arquitectura distribuida. En lugar de tener 
+                 un único espacio para todo el historial de versiones del software
+                  propio de los sistemas de control como CVS o Subversion, aquí la 
+                  copia de trabajo del código de cada desarrollador es un repositorio 
+                  que puede albergar el historial completo de todos los cambios.</p>
+         <img src="assets/imagenes/images.jpg" alt="logo">
+<br>
+
+<center><h1>Caracteristicas de Git</h1></center>
+<p><strong>Distribuido y Descentralizado:</strong>
+    A diferencia de los sistemas de control de versiones centralizados
+     en los que se almacena una única copia del repositorio, Git es 
+     distribuido y como desarrolladores tenemos una copia completa del
+     historial de cambios. Esto nos permite trabajar de forma independiente
+      y fusionar nuestros cambios en el repositorio principal de manera eficiente.
+    </p>
+    <p><strong>Rastreo Preciso de Cambios:</strong>
+        Git realiza un seguimiento preciso de los cambios realizados en 
+        cada archivo a lo largo del tiempo. Esto nos permite como desarrollador 
+        ver el historial completo de cambios, incluidas las diferencias entre versiones 
+        y la posibilidad de regresar a versiones anteriores en caso de problemas.
+        </p>
+        <p><strong>Ramificación Eficiente:</strong>
+            Git hace que la creación y gestión de ramas branches sea sencillo
+             Como desarrollador podemos crear ramas para trabajar con nuevas 
+             características o arreglos sin afectar la rama principal
+             Esto fomenta el desarrollo paralelo y facilita la colaboración en equipos grandes.
+            </p>
+            <p>
+                 <strong>Fusiones Simplificadas:</strong>
+                La capacidad de fusionar cambios entre diferentes ramas es una
+                 característica clave de Git. Como desarrollador podemos combinar 
+                 cambios de manera eficiente, lo que facilita la integración 
+                 continua y evita conflictos de código
+                </p>
+
+<center><h1>Ventajas de Usar Git en el Desarrollo de Software</h1></center>
+<p><strong>Historial Completo y Rastreable:</strong>
+    Git permite rastrear y documentar cada cambio realizado en 
+    el código a lo largo del tiempo. Esto facilita la identificación 
+    de quién hizo qué cambio y cuándo, lo que es esencial para resolver
+     problemas y mantener la transparencia en el desarrollo.
+    </p>
+    <p><strong>Desarrollo Colaborativo sin Fricción:</strong>
+        Con Git, varios desarrolladores pueden trabajar en paralelo en 
+        diferentes características o soluciones sin interferir en el trabajo 
+        de los demás. Las ramas y las fusiones simplifican la colaboración y
+         permiten una integración continua más fluida
+        </p>
+        <p><strong>Reversión Sencilla y Segura:</strong>
+            En caso de errores o problemas, Git nos permite como desarrolladores
+             retroceder a versiones anteriores de manera rápida y segura. Esto reduce
+              el riesgo de impactos negativos en el proyecto y facilita la corrección de errores.
+            </p>
+            <p><strong>Flujo de Trabajo Flexible:</strong>
+                Git se adapta a diferentes flujos de trabajo, desde el modelo de
+                 ramificación estándar hasta enfoques más avanzados como Gitflow 
+                 o GitHub Flow. Esto permite a los equipos adaptar Git a sus necesidades específicas.
+                </p>
+                <p><strong>Integración con Plataformas de Colaboración</strong>
+                    Plataformas como GitHub ofrecen características de seguimiento 
+                    de problemas, revisión de código y colaboración en proyectos. Git
+                     se integra perfectamente con estas herramientas, facilitando la 
+                     gestión de proyectos y el trabajo en equipo
+                    </p>
+                    <br>
+                    <img src="imagenes/ventajas.jpg" width="500" height="250" alt="logo">
+
+                    <center><h1>comando basicos de git</h1></center>
+                    <p><strong>Git clone</strong>
+                        Git clone es un comando para descargarte el código fuente existente desde un repositorio remoto 
+                        (como Github, por ejemplo). En otras palabras, Git clone básicamente realiza una copia idéntica
+                         de la última versión de un proyecto en un repositorio y la guarda en tu ordenador.
+                         Hay un par de formas de descargar el código fuente, pero principalmente yo prefiero clonar de la forma con https:
+                         <mark>git clone https://link-con-nombre-del-repositorio</mark>
+                        Por ejemplo, si queremos descargar un proyecto desde Github, todo lo que necesitamos 
+                        es hacer clic sobre el botón verde (clonar o descargar), copiar la URL de la caja y 
+                        pegarla después del comando git clone que he mostrado más arriba.</p>
+                        <img src="imagenes/clone.png" width="1000" height="306" alt="logo">
+                        <p><strong>Git branch</strong>
+                            Las ramas (branch) son altamente importantes en el mundo de Git. Usando ramas, varios
+                             desarrolladores pueden trabajar en paralelo en el mismo proyecto simultáneamente. Podemos
+                              usar el comando git branch para crearlas, listarlas y eliminarlas.
+                              <br>
+                            <strong> Creando una nueva rama:</strong>
+                             <mark>git branch nombre-de-la-rama </mark>
+                            Este comando creará una rama en local. Para enviar (push) la nueva rama al repositorio remoto, necesitarás usar el siguiente comando:
+                            <mark>git push nombre-remoto nombre-rama</mark>
+                            <br>
+                            <strong> Visualización de ramas:</strong>
+                            
+                         <mark> git branch </mark>
+                         <mark>git branch --list </mark>
+                         <br>
+                        <strong>Borrar una rama:</strong>
+                            
+                         <mark> git branch -d nombre-de-la-rama </mark></p>
+                         
+                         <p><strong>Git checkout</strong>
+                            Este es también uno de los comandos más utilizados en Git. Para trabajar en una rama, primero tienes que cambiarte a ella. Usaremos git checkout principalmente para cambiarte de una rama a otra. También lo podemos usar para chequear archivos y commits.
+                            
+                            <mark>git checkout nombre-de-la-rama</mark>
+                            <br>
+                            <strong>Hay algunos pasos que debes seguir para cambiarte exitosamente entre ramas:+</strong>
+                            
+                            Los cambios en tu rama actual tienen que ser confirmados o almacenados en el guardado rápido (stash) antes de que cambies de rama.
+                            La rama a la que te quieras cambiar debe existir en local.
+                            Hay también un comando de acceso directo que te permite crear y cambiarte a
+                            <br>
+                             <strong>esa rama al mismo tiempo:</strong>
+                            
+                             <mark>git checkout -b nombre-de-tu-rama</mark>
+                            Este comando crea una nueva rama en local (-b viene de rama (branch)) y te 
+                            cambia a la rama que acabas de crear.</p>
+                            
+                        <p> <strong>Git status</strong>
+                                El comando de git status nos da toda la información necesaria sobre la rama actual.
+                                
+                                 <mark>git status</mark>
+                                 <br>
+                                 <strong> Podemos encontrar información como:</strong>
+                                
+                                Si la rama actual está actualizada
+                                Si hay algo para confirmar, enviar o recibir (pull).
+                                Si hay archivos en preparación (staged), sin preparación(unstaged) o que no están recibiendo seguimiento (untracked)
+                                Si hay archivos creados, modificados o eliminados</p>
+                                <img src="imagenes/status.png" width="800" height="300" alt="logo">
+                                <p> <strong>Git add</strong>
+                                    Cuando creamos, modificamos o eliminamos un archivo, estos cambios suceden en local y no se
+                                     incluirán en el siguiente commit (a menos que cambiemos la configuración).
+                                    
+                                    Necesitamos usar el comando git add para incluir los cambios del o 
+                                    de los archivos en tu siguiente commit.
+                                    
+                                    <strong>Añadir un único archivo:</strong>
+                                    
+                                    <mark>git add archivo</mark>
+                                    Añadir todo de una vez:
+                                    
+                                    <mark>git add -A</mark>
+                                    Si revisas la captura de pantalla que he dejado en la sección 4, verás que hay nombres de
+                                     archivos en rojo - esto significa que los archivos sin preparación.
+                                      Estos archivos no serán incluidos en tus commits hasta que no los añadas.
+                                      <br>
+                                     <strong> Para añadirlos, necesitas usar el git add: </strong></p>
+                                     <img src="imagenes/add.png" width="800" height="300" alt="logo">
+                                     <h3>Aqui hay  un link con mas comandos utiles para git</h3>
+                                    <button><a href="https://www.atlassian.com/es/git/glossary"> link </a></button> 
+
+                                    <br>
+                                    <center><h1>¿Que Es Githud?</h1></center>
+                                    <p>GitHub es una plataforma basada en la nube donde puedes almacenar, compartir y trabajar junto con otros usuarios para escribir código.
+
+                                    Almacenar tu código en un "repositorio" en GitHub te permite lo siguiente:
+
+                                    Presentar o compartir el trabajo.
+                                    Seguir y administrar los cambios en el código a lo largo del tiempo.
+                                    Dejar que otros usuarios revisen el código y realicen sugerencias para mejorarlo.
+                                    Colaborar en un proyecto compartido, sin preocuparse de que los cambios afectarán al trabajo de los colaboradores antes de que esté listo para integrarlos.
+                                    El trabajo colaborativo, una de las características fundamentales de GitHub, es posible gracias al software de código abierto Git, en el que se basa GitHub.</p>
+                                    <img src="imagenes/Githud.png" width="500" height="300" alt="logo">
+                                    <br>
+                                    <p><strong>¿Cómo funcionan Git y GitHub de manera conjunta?</strong>
+                                        Al cargar archivos en GitHub, los almacenarás en un "repositorio de Git". Esto significa que al realizar 
+                                        cambios (o "confirmaciones") en los archivos de GitHub, Git se iniciará automáticamente para realizar el seguimiento de los cambios y administrarlos.
+                                        Hay muchas acciones relacionadas con Git que puedes completar en GitHub directamente en el navegador, como crear un repositorio de Git,
+                                        crear ramas y cargar y editar archivos.
+                                        Pero la mayoría de los usuarios trabajan en sus archivos localmente (en su propio ordenador), luego sincronizan
+                                      continuamente estos cambios locales y todos los datos de Git relacionados, con el repositorio central "remoto" en GitHub. Hay muchas
+                                       herramientas que puedes usar para hacerlo, como GitHub Desktop.
+                                        Cuando empieces a colaborar con otros y todos necesitéis trabajar en el mismo repositorio al mismo tiempo, haréis lo siguiente continuamente:
+                                        Extraer todos los cambios más recientes realizados por los colaboradores del repositorio remoto en GitHub.
+                                        Insertar tus propios cambios en el mismo repositorio remoto en Githud
+                                        Git determina cómo combinar inteligentemente este flujo de cambios y GitHub te ayuda a administrarlo mediante características como las "solicitudes de cambios".</p>
+                                        <img src="imagenes/funcion githud.jpg" width="500" height="300" alt="logo">
+                                        <br>
+                                        <p><strong>Explorando la Interfaz de GitHub</strong>
+                                            Para tener un entendimiento básico de como luce la interfaz de GitHub,
+                                            aquí hay un código fuente de WordPress alojado en un repositorio de GitHub:
+                                            El código de WordPress en GitHub
+                                            El código de WordPress en GitHub
+                                            Desde ahí, podrá ver varias bifurcaciones que están siendo modificadas, 
+                                            al igual podrá ver cuando alguien hace un commit (una forma de “guardar” un archivo). 
+                                            Dependiendo de cómo haya sido establecido el repositorio, también podrá crear su propia
+                                            bifurcación y sus propios commits.
+                                            Una vez que haya hecho algunos cambios, usted puede enviar ese código
+                                            de nuevo a la bifurcación, con tan solo hacer una solicitud de pull. Una solicitud de pull
+                                            es básicamente pedirle a la persona a cargo de la bifurcación que incluya su código. Y este 
+                                            también ayuda a que esta persona pueda ver exactamente qué fue lo que cambió en el código.
+                                            Si quisiera editar un poco o bastante del código fuente de WordPress en su propia cuenta de forma 
+                                            relativamente permanente. También podría hacerle fork con tan solo dar click en el botón de Fork
+                                            (un fork es similar en concepto a la bifurcación, pero el fork es relativamente permanente):</p>
+                                            <img src="imagenes/interfaz.png" width="500" height="300" alt="logo">
+                                            <br>
+                                            <h3>aqui puedes conseguir mas informacion sobre githud</h3>
+                                            <button><a href="https://kinsta.com/es/base-de-conocimiento/que-es-github/"> link </a></button> 
+
+
+                                                                                                      
+</body>
+</html>
